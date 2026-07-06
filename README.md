@@ -12,8 +12,6 @@ Ranked tracks by **save rate** and **playlist conversion** (intent signals) rath
 
 Track-level (Q1):
 
-<**Schema (MySQL v5.7)**
-
     CREATE TABLE tracks (
       track_id INT PRIMARY KEY,
       track_name TEXT, artist TEXT, genre TEXT, release_date DATE
@@ -66,11 +64,9 @@ Track-level (Q1):
 | Concrete Halo   | Aria Cole | 98000         | 2250        | 175                 | 2.3           | 0.18              |
 | Neon Prayer     | Juno Sky  | 142000        | 1750        | 115                 | 1.23          | 0.08              |
 
---->
-
 Platform view (Q2):
 
-<**Query #2**
+**Query #2**
 
     -- Q2: Which platform drives plays but weak saves?
     SELECT
@@ -88,7 +84,7 @@ Platform view (Q2):
 | TikTok     | 88000         | 0.45              |
 | AppleMusic | 20000         | 15.5              |
 
---->
-
 ## Recommendation
-Put marketing behind Apple Music because it has the highest save rate (15.5%) — strong fan intent — even though its raw stream count is lower than TikTok-driven tracks. TikTok delivers reach but the weakest saves, so it's an awareness play, not a fandom play.
+Put marketing behind Slow Static by the Vale because it has the highest save rate (15.5%) — strong fan intent — even though its raw stream count is lower than TikTok-driven tracks. TikTok delivers reach but the weakest saves, so it's an awareness play, not a fandom play.
+A stronger play may actually be Gasoline Sunday because it is right behind at a save rate of (14.36%) and has 2x the streams
+and the best playlist conversion.
